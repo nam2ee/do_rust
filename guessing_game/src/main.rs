@@ -1,5 +1,10 @@
 use std::{io, cmp::Ordering};
 use rand::Rng;
+// use 키워드를 통해 외부 패키지를 가져올 수 있다.
+// rand::Rng는 rand 패키지의 Rng 트레이트를 가져온다.
+// cargo  doc --open 명령어를 통해 패키지의 문서를 확인할 수 있다. 
+// ex - 어떤 트레이트가 어떤 메서드를 가지고 있는지 확인할 수 있다.
+
 
 fn main() {
     println!("Guessing the number!");
@@ -12,6 +17,8 @@ fn main() {
     println!("Please input your guess.");
     
     let mut guess = String::new();
+    // mut 키워드를 통해 가변성을 부여한다.
+    // Rust에서 기본적으로 변수는 불변성을 가진다.
     
     
 
